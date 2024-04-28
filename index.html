@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #000080;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header a:hover {
+            color: #ffa500;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #000080;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="password"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        form input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #ffa500;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #ff8c00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact Us</a>
+    </header>
+
+    <main>
+        <div class="product-card">
+            <img class="product-image" src="nike-shoe.jpg" alt="Nike Shoe">
+            <div class="product-description">
+                <h2>Nike Air Max 270</h2>
+                <p>Experience the ultimate in cushioning and style with the Nike Air Max 270. This iconic shoe features a full-length Air Max unit for unparalleled comfort and support.</p>
+                <p>Color: Black/White/Volt</p>
+                <p>Price: $150.00</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="nike-sneaker.jpg" alt="Nike Sneaker">
+            <div class="product-description">
+                <h2>Nike Free RN 5.0</h2>
+                <p>Get ready to run in style with the Nike Free RN 5.0. This lightweight and flexible shoe is designed for natural movement and comfort.</p>
+                <p>Color: White/Black/Volt</p>
+                <p>Price: $120.00</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Nike, Inc. All rights reserved.</p>
+    </footer>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Email">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Password">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
